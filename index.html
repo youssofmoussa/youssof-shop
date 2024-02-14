@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login/Register Form</title>
+    <link rel="stylesheet" href="index2.html">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: beige;
+      }
+
+      .container {
+        text-align: center;
+        background-color: #f0f0f0;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+        max-width: 300px;
+        margin: auto;
+      }
+
+      .container h2 {
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      input {
+        margin-bottom: 10px;
+        padding: 8px;
+        width: 200px;
+        border: none;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #555;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #333;
+      }
+
+      .form-transition {
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: all 0.3s ease;
+      }
+      .buttons {
+        margin-top: 10px;
+      }
+
+      .form-transition {
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: all 0.3s ease;
+      }
+
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <div class="buttons">
+          <button type="submit" id="loginBtn">Login</button>
+          <a href="index2.html"><button id="registerBtn">Register</button></a>
+        </div>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
